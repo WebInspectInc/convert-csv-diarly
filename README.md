@@ -1,10 +1,12 @@
-# Convert CSV to Markdown
+# Convert CSV to Diarly
 
-This is a Node script to convert CSV files to Markdown files. We recently migrated over from a traditional CMS called [October](https://octobercms.com/) to a static site generator called [Gatsby](https://www.gatsbyjs.org/). With posts being exported in a CSV file, we thought it'd be best to automate the process of creating Markdown files with front matter data that we can then import into our new Gatsby blog (which you can [take a look at the code here](https://github.com/ninjality/web)).
+This is a Node script to convert CSV files to Diarly Markdown files. I used to journal with [iDoneThis](https://idonethis.com/), which isn't strictly for journaling, and they use CSVs to backup your entries. Not only do they use CSVs, but they also have multiple entries per date, which is not something that Diarly supports. So I modified this library so that it will take a CSV with multiple entries per date and append them, allowing for a single Markdown file for every day in your CSV file.
+
+This code is mostly taken from the excellent work done by the good people at [Ninjality](https://github.com/ninjality).
 
 ## Install
 
-1. Clone this repository: `git clone https://github.com/ninjality/convert-csv-markdown.git`
+1. Clone this repository: `git clone https://github.com/WebInspectInc/convert-csv-markdown.git`
 2. Install dependencies: `npm install` or `yarn install` [(learn about yarn)](https://yarnpkg.com/)
 
 ## Usage
